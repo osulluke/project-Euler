@@ -17,7 +17,9 @@ int main(void) {
       }
       else if (j == numPrimes - 1) {
         primes[numPrimes++] = i;
-        printf("prime[%d] = %ld\n", j, primes[j]);
+        if(j+1 == 10001) {
+          printf("prime[%d] = %ld\n", j + 1, primes[j]);  
+        }
       }
     }
   }
